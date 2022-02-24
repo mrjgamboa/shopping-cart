@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+.headerWrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.headerDiv {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.imgContainer {
+  width: 38px;
+  height: 38px;
+  margin-right: 1rem;
+}
+
+.img {
+  min-width: 38px;
+}
+
+.headerNav {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .headerDiv,
+  .headerNav {
+    width: 100%;
+  }
+  .headerNav {
+    margin-top: .5rem;
+  }
+}

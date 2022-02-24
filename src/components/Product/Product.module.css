@@ -1,0 +1,9 @@
+.productDiv {
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  max-width: calc(100px + 5vw);
+  width: 100%;
+}

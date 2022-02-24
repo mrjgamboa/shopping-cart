@@ -1,0 +1,30 @@
+@import "css-reset.css";
+@import "fonts.css";
+
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  --color-primary: hsl(0, 0%, 92%);
+  --color-secondary: hsl(0, 0%, 0%);
+  --color-tertiary: hsl(137, 57%, 35%);
+}
+
+body {
+  font-family: "Montserrat Thin", sans-serif;
+}
+
+header,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat SemiBold", sans-serif;
+}
+
+strong,
+nav,
+a,
+button,
+footer {
+  font-family: "Montserrat Regular", sans-serif;
+}

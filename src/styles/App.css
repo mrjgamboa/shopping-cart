@@ -1,0 +1,48 @@
+.App {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+header {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: 1.15rem;
+}
+
+a {
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+  color: var(--color-primary);
+}
+
+a.active {
+  color: var(--color-tertiary);
+  cursor: default;
+  pointer-events: none;
+}
+
+a:hover,
+a:focus-visible,
+button:hover,
+button:focus-visible {
+  text-decoration: line-through;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: var(--color-secondary);
+}
+
+footer * {
+  color: var(--color-primary);
+}

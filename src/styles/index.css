@@ -2,7 +2,6 @@
 @import "fonts.css";
 
 :root {
-  --box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   --color-primary: hsl(0, 0%, 92%);
   --color-secondary: hsl(0, 0%, 0%);
   --color-tertiary: hsl(137, 57%, 35%);

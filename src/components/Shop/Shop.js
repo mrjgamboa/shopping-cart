@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import styles from './Shop.module.css';
 import hero from '../../img/hero.png';
-import { products } from '../../data/products';
 
 export default function Shop(params) {
   const [showNav, setShowNav] = useState(false);
@@ -31,7 +30,7 @@ export default function Shop(params) {
             aria-label='secondary'
           >
             <div className={styles.wrapper}>
-              <NavLink to='all'>All</NavLink>
+              <NavLink to='all-products'>All Products</NavLink>
               <NavLink to='art-prints'>Art Prints</NavLink>
               <NavLink to='stickers'>Stickers</NavLink>
               <NavLink to='mugs'>Mugs</NavLink>

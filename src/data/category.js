@@ -1,6 +1,6 @@
 export const category = [
-  'art prints',
+  'art-prints',
   'stickers',
   'mugs',
-  'mouse pads'
+  'mouse-pads'
 ];

@@ -7,17 +7,17 @@ export const artPrints = [
   {
     id: 1,
     name: 'AdmiralBulldog Dictionary',
-    category: 'art prints',
+    category: 'art-prints',
     size: '8x10',
     color: 'white',
     price: 20,
-    stocks: 23,
+    stocks: 123,
     src: dictionary
   },
   {
     id: 2,
     name: 'AdmiralBulldog Krappa',
-    category: 'art prints',
+    category: 'art-prints',
     size: '8x10',
     color: 'charcoal',
     price: 20,
@@ -27,7 +27,7 @@ export const artPrints = [
   {
     id: 3,
     name: 'AdmiralBulldog 420',
-    category: 'art prints',
+    category: 'art-prints',
     size: '8x10',
     color: 'artichoke',
     price: 20,
@@ -37,7 +37,7 @@ export const artPrints = [
   {
     id: 4,
     name: 'AdmiralBulldog MALD',
-    category: 'art prints',
+    category: 'art-prints',
     size: '8x10',
     color: 'cobalt',
     price: 20,

@@ -8,7 +8,7 @@ export const mousePads = [
   {
     id: 1,
     name: 'AdmiralBulldog Krappa',
-    category: 'mouse pads',
+    category: 'mouse-pads',
     size: '13x11',
     color: 'navy',
     price: 20,
@@ -18,7 +18,7 @@ export const mousePads = [
   {
     id: 2,
     name: 'AdmiralBulldog 36 x 18 Logo Mousepad',
-    category: 'mouse pads',
+    category: 'mouse-pads',
     size: '36x18',
     color: 'navy',
     price: 43,
@@ -28,7 +28,7 @@ export const mousePads = [
   {
     id: 3,
     name: 'AdmiralBulldog FetHead',
-    category: 'mouse pads',
+    category: 'mouse-pads',
     size: '13x11',
     color: 'cosmic latte',
     price: 20,
@@ -38,7 +38,7 @@ export const mousePads = [
   {
     id: 4,
     name: 'AdmiralBulldog Creation of Doggos',
-    category: 'mouse pads',
+    category: 'mouse-pads',
     size: '13x11',
     color: 'military green',
     price: 20,
@@ -48,7 +48,7 @@ export const mousePads = [
   {
     id: 5,
     name: 'AdmiralBulldog MALD LEVEL',
-    category: 'mouse pads',
+    category: 'mouse-pads',
     size: '13x11',
     color: 'charcoal',
     price: 20,

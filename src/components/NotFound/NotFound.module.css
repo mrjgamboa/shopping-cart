@@ -1,0 +1,32 @@
+.notFoundDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.notFoundDiv * {
+  margin: .5rem auto;
+}
+
+.h2,
+.button {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.imgContainer {
+  max-width: 300px;
+}
+
+.img {
+  object-fit: contain;
+}
+
+.button {
+  background-color: transparent;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+}

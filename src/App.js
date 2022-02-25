@@ -5,6 +5,7 @@ import { products } from './data/products';
 import { category } from './data/category';
 import logo from './img/admiralC-58x58.png';
 import Header from './components/Header/Header';
+import Cart from './components/Cart/Cart';
 import Home from './components/Home/Home';
 import Shop from './components/Shop/Shop';
 import ListingContainer from './components/ListingContainer';
@@ -17,6 +18,9 @@ const getCategoryData = (string) => products.flatMap(
 );
 
 export default function App() {
+  const [cartItemCount, setCartItemCount] = useState(0);
+  const [cartData, setCartData] = useState([]);
+
   return (
     <div className='App'>
       <Header 
@@ -56,8 +60,8 @@ export default function App() {
             path={`shop/:category/:id`} 
             element={<ProductDetails />}
           />
-          {/* cart route here */}
-          <Route path='*' element={<NotFound />} /> {/* fix NotFound */}
+          <Route path='cart' element={<Cart />} />
+          <Route path='*' element={<NotFound subject='page'/>} />
         </Routes>
       </main>
       <Footer

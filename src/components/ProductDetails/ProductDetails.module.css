@@ -1,0 +1,51 @@
+.productDiv {
+  width: 100%;
+}
+
+.imgContainer {
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+.img {
+  object-fit: contain;
+}
+
+.detailsDiv {
+  max-width: 570px;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.priceNStock {
+  margin-bottom: 1rem;
+}
+
+.type {
+  text-transform: capitalize;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 3rem 0; 
+}
+
+.button {
+  background-color: white;
+  border-radius: 3px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  width: 49%;
+  padding: 1rem .25rem;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--color-tertiary);
+  color: white;
+}

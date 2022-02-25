@@ -11,7 +11,7 @@ export const stickers = [
     category: 'stickers',
     size: '3x4',
     price: 3,
-    stocks: 45,
+    stocks: 1,
     src: ooo
   },
   {

@@ -17,15 +17,76 @@ const getCategoryData = (string) => products.flatMap(
   (product) => (product.category === string) ? product : []
 );
 
+const getObjectIndex = (source, target) => source.findIndex(
+  sourceChild => ((sourceChild.id === target.id)
+    && (sourceChild.category === target.category))
+);
+
 export default function App() {
   const [cartItemCount, setCartItemCount] = useState(0);
   const [cartData, setCartData] = useState([]);
+
+  useEffect(() => {
+    if (localStorage.getItem('localCartData') === null) {
+      localStorage.setItem('localCartData', JSON.stringify([]));
+    } else {
+      const localCartData = JSON.parse(localStorage.getItem('localCartData'));
+      setCartData([...localCartData]);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('localCartData', JSON.stringify(cartData));
+    setCartItemCount(cartData.reduce(
+      (prev, curr) => prev + curr.quantity, 0
+    ));
+  }, [cartData]);
+
+  const cartModule = (() => {
+    const increment = (index) => {
+      const updatedCartData = cartData;
+      const totalQuantity = updatedCartData[index].quantity + 1;
+      if (totalQuantity <= updatedCartData[index].stocks) {
+        updatedCartData[index] = {
+          ...updatedCartData,
+          quantity: totalQuantity
+        };
+        setCartData([...updatedCartData]);
+      }
+    };
+//! resume here
+    const remove = () => {};
+  
+    const decrement = () => {};
+
+    const add = (object) => {
+      const index = getObjectIndex(cartData, object);
+      if (index >= 0) {
+        increment(index)
+      } else {
+        setCartData([ ...cartData, object ]);
+      }
+    };
+
+    const newValue = () => {};
+    const clear = () => {};
+
+    return {
+      increment,
+      decrement,
+      add,
+      remove,
+      newValue,
+      clear
+    };
+  })();
 
   return (
     <div className='App'>
       <Header 
         logoSrc={logo}
         h1String="AdmiralBulldog's Merch"
+        cartCount={cartItemCount}
       />
       <main>
         <Routes>
@@ -51,7 +112,9 @@ export default function App() {
             {category.map((item, index) => 
               <Route 
                 path={`${item}`}
-                element={<ListingContainer data={getCategoryData(item)}/>}
+                element={<ListingContainer data={
+                  getCategoryData(item)
+                }/>}
                 key={`${item}${index}`}
               />
             )}

@@ -2,7 +2,7 @@ import styles from './Header.module.css';
 import { NavLink } from 'react-router-dom';
 
 export default function Header(
-  { logoSrc, h1String, activePage }
+  { logoSrc, h1String, cartCount }
 ) {
   return (
     <header className={styles.header}>
@@ -23,7 +23,9 @@ export default function Header(
         >
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/shop'>Shop</NavLink>
-          <NavLink to='/cart'>Cart</NavLink>
+          <NavLink to='/cart'>
+            Cart{(cartCount > 0) ? ` (${cartCount})` : null}
+          </NavLink>
         </nav>
       </div>
     </header>

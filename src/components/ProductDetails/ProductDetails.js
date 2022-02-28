@@ -1,10 +1,11 @@
 import { useParams } from 'react-router-dom';
 import styles from './ProductDetails.module.css';
 import { products } from '../../data/products';
+import getObjectIndex from '../../utils/getObjectIndex';
 import Wrapper from '../Wrapper/Wrapper';
 import NotFound from '../NotFound/NotFound';
 
-export default function ProductDetails() {
+export default function ProductDetails({module}) {
   const params = useParams();
 
   const productIndex = products.findIndex(
@@ -50,8 +51,24 @@ export default function ProductDetails() {
             }
             {(product.stocks > 0) &&
               <div className={styles.buttonsContainer}>
-                <button className={styles.button}>
-                  add to cart
+                <button 
+                  className={styles.button}
+                  onClick={() => module.add({
+                    id: product.id,
+                    category: product.category,
+                    name: product.name,
+                    src: product.src,
+                    price: product.price,
+                    quantity: 1
+                  })}
+                >
+                  {
+                    (getObjectIndex(
+                      JSON.parse(localStorage.getItem('localCartData')),
+                      product
+                    ) > -1 )
+                    ? 'Add More' : 'Add to Cart'
+                  }
                 </button>
                 <button className={styles.button}>
                   buy now

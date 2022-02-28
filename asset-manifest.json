@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.f2caf883.css",
+    "main.js": "/shopping-cart/static/js/main.c7f35a72.js",
+    "static/media/fetHead.png": "/shopping-cart/static/media/fetHead.a8a8990bff5dbe8cd655.png",
+    "static/media/hero.png": "/shopping-cart/static/media/hero.dfd5752099aef866c954.png",
+    "static/media/alliance.png": "/shopping-cart/static/media/alliance.d41c32a77c30689f8e67.png",
+    "static/media/okayChamp.png": "/shopping-cart/static/media/okayChamp.7561c9938ed3fc128dc1.png",
+    "static/media/logo.png": "/shopping-cart/static/media/logo.b63f9f74782ad8a25a5b.png",
+    "static/media/krappa.png": "/shopping-cart/static/media/krappa.1b6b665817da92077dc3.png",
+    "static/media/doggos.png": "/shopping-cart/static/media/doggos.44b55e58b308e286eeb6.png",
+    "static/media/maldLevel.png": "/shopping-cart/static/media/maldLevel.a6d0e45fbafbe94c53e6.png",
+    "static/media/Montserrat-SemiBold.otf": "/shopping-cart/static/media/Montserrat-SemiBold.b4f6721ba1a251742ea6.otf",
+    "static/media/Montserrat-Regular.otf": "/shopping-cart/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
+    "static/media/Montserrat-Thin.otf": "/shopping-cart/static/media/Montserrat-Thin.d499418298509d45f4b2.otf",
+    "static/media/ooo.png": "/shopping-cart/static/media/ooo.c91001de47ff7f9ce645.png",
+    "static/media/ceaser.png": "/shopping-cart/static/media/ceaser.1e890428ff2be7a7e9bb.png",
+    "static/media/420.png": "/shopping-cart/static/media/420.aa81a8263703ea046357.png",
+    "static/media/rat.png": "/shopping-cart/static/media/rat.edc3bd733bea32bbc8d0.png",
+    "static/media/captainProphet.png": "/shopping-cart/static/media/captainProphet.11efee571fc30fa35422.png",
+    "static/media/groove.png": "/shopping-cart/static/media/groove.9893e9b82a205eb43057.png",
+    "static/media/loneDruid.png": "/shopping-cart/static/media/loneDruid.f0bac46d431aa5dc8a97.png",
+    "static/media/mald.png": "/shopping-cart/static/media/mald.9302961f7faaa9966af4.png",
+    "static/media/dictionary.png": "/shopping-cart/static/media/dictionary.e1b4f9ed22e64c922867.png",
+    "static/media/admiralC-58x58.png": "/shopping-cart/static/media/admiralC-58x58.591bce51d9745da931b0.png",
+    "static/media/not-found.svg": "/shopping-cart/static/media/not-found.4618329a45deed34c7598057eeee8d9b.svg",
+    "index.html": "/shopping-cart/index.html",
+    "main.f2caf883.css.map": "/shopping-cart/static/css/main.f2caf883.css.map",
+    "main.c7f35a72.js.map": "/shopping-cart/static/js/main.c7f35a72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2caf883.css",
+    "static/js/main.c7f35a72.js"
+  ]
+}

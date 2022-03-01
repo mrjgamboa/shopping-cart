@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.f2caf883.css",
-    "main.js": "/shopping-cart/static/js/main.c7f35a72.js",
+    "main.js": "/shopping-cart/static/js/main.7b5bd76a.js",
     "static/media/fetHead.png": "/shopping-cart/static/media/fetHead.a8a8990bff5dbe8cd655.png",
     "static/media/hero.png": "/shopping-cart/static/media/hero.dfd5752099aef866c954.png",
     "static/media/alliance.png": "/shopping-cart/static/media/alliance.d41c32a77c30689f8e67.png",
@@ -26,10 +26,10 @@
     "static/media/not-found.svg": "/shopping-cart/static/media/not-found.4618329a45deed34c7598057eeee8d9b.svg",
     "index.html": "/shopping-cart/index.html",
     "main.f2caf883.css.map": "/shopping-cart/static/css/main.f2caf883.css.map",
-    "main.c7f35a72.js.map": "/shopping-cart/static/js/main.c7f35a72.js.map"
+    "main.7b5bd76a.js.map": "/shopping-cart/static/js/main.7b5bd76a.js.map"
   },
   "entrypoints": [
     "static/css/main.f2caf883.css",
-    "static/js/main.c7f35a72.js"
+    "static/js/main.7b5bd76a.js"
   ]
 }

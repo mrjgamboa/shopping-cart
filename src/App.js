@@ -115,7 +115,7 @@ export default function App() {
       />
       <main>
         <Routes>
-          <Route index element={<Home 
+          <Route path='/' element={<Home 
             punchLine='Get the best collection here'
           />} />
           <Route path='/shop' element={<Shop />}>
